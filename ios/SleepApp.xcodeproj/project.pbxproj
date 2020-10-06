@@ -22,6 +22,7 @@
 		C371E42B40E2815D59F5F4A6 /* libPods-SleepApp-SleepAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB53637C8A2C50408D0CD4A2 /* libPods-SleepApp-SleepAppTests.a */; };
 		59A91D28C53B4046B359287A /* HelveticaNeueBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6D292E92CE94427A59DB130 /* HelveticaNeueBold.ttf */; };
 		76E67895BB4A40918FF6FCEC /* HelveticaNeueLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA2068313E814B25BC36DBB6 /* HelveticaNeueLight.ttf */; };
+		196E66D2A8304C309478B251 /* AirbnbCerealApp-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C2122392DF149089F931189 /* AirbnbCerealApp-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		D6D292E92CE94427A59DB130 /* HelveticaNeueBold.ttf */ = {isa = PBXFileReference; name = "HelveticaNeueBold.ttf"; path = "../assets/fonts/HelveticaNeueBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		CA2068313E814B25BC36DBB6 /* HelveticaNeueLight.ttf */ = {isa = PBXFileReference; name = "HelveticaNeueLight.ttf"; path = "../assets/fonts/HelveticaNeueLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8C2122392DF149089F931189 /* AirbnbCerealApp-Bold.ttf */ = {isa = PBXFileReference; name = "AirbnbCerealApp-Bold.ttf"; path = "../assets/fonts/AirbnbCerealApp-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			children = (
 				D6D292E92CE94427A59DB130 /* HelveticaNeueBold.ttf */,
 				CA2068313E814B25BC36DBB6 /* HelveticaNeueLight.ttf */,
+				8C2122392DF149089F931189 /* AirbnbCerealApp-Bold.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				59A91D28C53B4046B359287A /* HelveticaNeueBold.ttf in Resources */,
 				76E67895BB4A40918FF6FCEC /* HelveticaNeueLight.ttf in Resources */,
+				196E66D2A8304C309478B251 /* AirbnbCerealApp-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
