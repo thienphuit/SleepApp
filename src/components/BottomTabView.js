@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  View, Text, TouchableOpacity, Image, SafeAreaView, StyleSheet,
+  View, Text, TouchableOpacity, Image, SafeAreaView,
 } from 'react-native'
 import { TAB_DATA } from '../configs'
 import { Colors, calRepository } from '../../assets/styles'
@@ -67,7 +67,7 @@ const MyTabBar = ({ state, descriptors, navigation }) => {
                 justifyContent: 'flex-end',
                 marginBottom: 8 * calRepository,
               }}
-              key={route.key}
+            // key={route.key}
             >
               <View style={{
                 width: 46 * calRepository,

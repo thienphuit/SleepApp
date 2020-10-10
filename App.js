@@ -1,13 +1,14 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { SCREEN_NAME } from './src/configs'
 import {
-  AfsarScreen, HomeScreen, LoginScreen, MusicScreen, SleepScreen, MyTabBar,
+  AfsarScreen, HomeScreen, LoginScreen, MusicScreen, SleepScreen, MeditateScreen,
 } from './src/screens'
 import SigupAndSigIn from './src/screens/auth/SigupAndSigIn'
-import MeditateScreen from './src/screens/main/MusicScreen'
+import { BottomTabView } from './src/components'
 
 const Stack = createStackNavigator()
 const Tab = createBottomTabNavigator()
@@ -15,7 +16,7 @@ const Tab = createBottomTabNavigator()
 function MainTabs() {
   return (
     <Tab.Navigator
-      tabBar={(props) => <MyTabBar {...props} />}
+      tabBar={(props) => <BottomTabView {...props} />}
     >
       <Tab.Screen name={SCREEN_NAME.HomeScreen} component={HomeScreen} options={{ title: 'Home' }} />
       <Tab.Screen name={SCREEN_NAME.SleepScreen} component={SleepScreen} options={{ title: 'Sleep' }} />

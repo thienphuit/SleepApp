@@ -9,11 +9,8 @@ import AfsarScreen from './main/AfsarScreen'
 import SigupAndSigIn from './auth/SigupAndSigIn'
 import LoginScreen from './auth/LoginScreen'
 
-// common
-import MyTabBar from './BottomTabView'
-
 export {
   HomeScreen, SigupAndSigIn, LoginScreen,
   SleepScreen, MeditateScreen, MusicScreen,
-  AfsarScreen, MyTabBar,
+  AfsarScreen,
 }
