@@ -1,10 +1,14 @@
 import React from 'react'
-import { View, StyleSheet, Image } from 'react-native'
+import {
+  View, StyleSheet, Image, TouchableOpacity, 
+} from 'react-native'
 import { imgHeartHome } from '../../assets/images'
 import { calRepository, Colors, Fonts } from '../../assets/styles'
 import Text from './Text'
 
-const CardTopic = ({ color, background, iconImage }) => {
+const CardTopic = ({
+  color, background, iconImage, onDetail, 
+}) => {
   return (
     <View style={[styles.container, { backgroundColor: background || Colors.bgButtonPurple }]}>
       <View>
@@ -44,23 +48,21 @@ const CardTopic = ({ color, background, iconImage }) => {
         >
           3-10min
         </Text>
-        <View
-          style={{
-            backgroundColor: color && color ? color : Colors.primaryBlackText,
-            width: 70,
-            height: 35,
-            borderRadius: 25,
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <Text style={{
-            color: color && color ? Colors.primaryBlackText : Colors.background,
-          }}
+        <TouchableOpacity onPress={() => onDetail()}>
+          <View
+            style={[styles.buttonStart, {
+              backgroundColor: 
+              color && color ? color : Colors.primaryBlackText, 
+            }]}
           >
-            Start
-          </Text>
-        </View>
+            <Text style={{
+              color: color && color ? Colors.primaryBlackText : Colors.background,
+            }}
+            >
+              Start
+            </Text>
+          </View>
+        </TouchableOpacity>
       </View>
     </View>
   )
@@ -73,6 +75,14 @@ const styles = StyleSheet.create({
     marginRight: 20 * calRepository,
     justifyContent: 'space-between',
     paddingLeft: 15,
+  },
+  buttonStart: {
+    
+    width: 70,
+    height: 35,
+    borderRadius: 25,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 })
 export default CardTopic

@@ -14,6 +14,8 @@ const Colors = {
   borderColor: '#EBEAEC',
   selection: '#A0A3B1',
   selectionMeditate: '#F1DDCF',
+  bgMusic: '#FAF7F3',
+  primaryPink: '#FF84A2',
 }
 const Fonts = {
   bold: {
