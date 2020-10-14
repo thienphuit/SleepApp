@@ -12,6 +12,10 @@ const Colors = {
   primaryOrange: '#FFDB9D',
   bgFocus: '#AFDBC5',
   borderColor: '#EBEAEC',
+  selection: '#A0A3B1',
+  selectionMeditate: '#F1DDCF',
+  bgMusic: '#FAF7F3',
+  primaryPink: '#FF84A2',
 }
 const Fonts = {
   bold: {

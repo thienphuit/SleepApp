@@ -1,9 +1,11 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, SafeAreaView } from 'react-native'
+import { Text } from '../../components'
 
 const SleepScreen = () => {
   return (
     <View>
+      <SafeAreaView />
       <Text>Hello</Text>
     </View>
   )

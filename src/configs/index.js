@@ -11,6 +11,8 @@ export const SCREEN_NAME = {
   MusicScreen: 'MusicScreen',
   AfsarScreen: 'AfsarScreen',
   MainTab: 'MainTab',
+  CourceDetails: 'CourceDetails',
+  PlayScreenList: 'PlayScreenList',
 }
 export const TAB_DATA = [
   {
