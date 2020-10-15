@@ -106,7 +106,6 @@ const Player = (props) => {
     }
     if (event.type === TrackPlayer.TrackPlayerEvents.PLAYBACK_STATE) {
       setState(playbackState)
-      // res.start()
     }
   })
   const isPlaying = playerState === STATE_PLAYING
