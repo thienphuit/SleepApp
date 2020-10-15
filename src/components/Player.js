@@ -67,18 +67,18 @@ const Player = (props) => {
   const progress = useTrackPlayerProgress()
   const { duration, position } = progress
   const playbackState = usePlaybackState()
-  const res = Animated.loop(
+  Animated.loop(
     Animated.timing(
       spinValue,
       {
-        toValue: 1,
+        toValue: playbackState === 'paused' ? 0 : 1,
         duration: 3000,
         // duration: Math.floor(duration) * 1000,
         easing: Easing.linear,
         useNativeDriver: true, // To make use of native driver for performance
       }
     )
-  )
+  ).start()
   // useEffect(() => {
   //   res.start()
   // }, [])
@@ -123,14 +123,6 @@ const Player = (props) => {
     // res.start()
     middleButtonText = iconPlay
   }
-  // First set up animation 
-  useEffect(() => {
-    if (playbackState === 'paused') {
-      res.stop()
-    } else {
-      res.start()
-    }
-  }, [playbackState])
   return (
     <View style={[styles.card, style]}>
       {/* <Image style={styles.cover} source={{ uri: trackArtwork }} /> */}
