@@ -8,7 +8,6 @@ import {
   love, down, 
   backgroundCource, backIcon, pinkHeart,
   phone,
-  iconPause,
 } from '../../assets/images'
 import { Colors, calRepository, Fonts } from '../../assets/styles'
 import { SCREEN_NAME } from '../configs'
@@ -17,15 +16,16 @@ const listItem = ['1', '2', '3']
 const { width } = Dimensions.get('window')
 const { initLayout } = width
 
-const FeMaleVoice = () => {
-  return (
-    <View>
-      <Text>Hello</Text>
-    </View>
-  )
-}
 const CourceDetails = ({ navigation }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
+
+  const FeMaleVoice = () => {
+    return (
+      <View>
+        <Text>Hello</Text>
+      </View>
+    )
+  }
   const MaleVoice = () => {
     const [play, setPlay] = useState('')
     const handlePlaySong = (active) => {

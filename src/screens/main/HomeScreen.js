@@ -1,20 +1,37 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   View, StyleSheet, Image, ImageBackground, FlatList, ScrollView,
 } from 'react-native'
+import { useDispatch } from 'react-redux'
 import { Text, CardHome } from '../../components'
 import { calRepository, Colors, Fonts } from '../../../assets/styles'
 import {
   logo, iconMusic, pause, maskDaily, focus,
 } from '../../../assets/images'
 import { SCREEN_NAME } from '../../configs'
+import { playlistAction } from '../../redux/actions'
 
 const listData = ['1', '2', '3']
+const token = 'BQCwyTlhajHRnp8wo4vWJ_i01ixLfmE5dND9BTNvjaIxoulQCT4iag7ADMiCxaCGloXtdCLavU8WLf2enxFE2f8iST38ZEEm0CQIf0qzRD447JPy8tjKDAdWtY7XvlIHasfSS9YDmS8ok4hJvVkaNMObdNuyBKfmSbAfo4vHFBaBmC3VERrNLFdGwto02FxW_KbAfAkrgnPHdDYLawz2sSSEwb81nikDIurghzLay3ivYKIhh7s_E9OI7gNoBqeduBkViPz_qX2a7HifiZxJn6luL6xiI93Q6Ck'
 const HomeScreen = (props) => {
   const { navigation } = props
   const onDetail = () => {
     navigation.navigate(SCREEN_NAME.CourceDetails)
   }
+  const dispatch = useDispatch()
+  const handleGetData = async () => {
+    dispatch(playlistAction.getPlayList({
+      token,
+    }, (response) => {
+      console.tron.log({ response })
+      console.log('============================')
+      console.log('resss', response.data)
+      console.log('============================')
+    }))
+  }
+  useEffect(() => {
+    handleGetData()
+  }, [])
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.container}>

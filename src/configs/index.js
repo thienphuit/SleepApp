@@ -36,3 +36,4 @@ export const TAB_DATA = [
     image: aftar,
   },
 ]
+export const API_URL = 'https://api.spotify.com/v1/me/playlists'

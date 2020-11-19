@@ -1,8 +1,5 @@
-import { playlistTypes } from '../types'
+import * as playlistAction from './playlists'
 
-export const getPlayList = (data, callback) => {
-  return {
-    type: playlistTypes.GET_PLAY_LIST,
-    payload: { data, callback },
-  }
+export {
+  playlistAction,
 }
